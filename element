@@ -1,0 +1,2111 @@
+URL url = new URL("https://gitter.im/webpack/webpack");
+HttpsURLConnection con = (HttpsURLConnection) url.openConnection();
+con.setRequestMethod("GET");
+con.setRequestProperty("<!doctype html>", "");
+con.setRequestProperty("<html class="no-js " lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=IE9" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <meta charset="utf-8">
+    <title>webpack/webpack - Gitter</title>
+    <style>", "");
+con.setRequestProperty("@-webkit-keyframes pulsey {
+        0% { opacity", "0.6; }
+        50% { opacity: 1; }
+        100% { opacity: 0.6; }
+      }");
+con.setRequestProperty("html.loading .trpContentPanel { background", "url("//cdn01.gitter.im/_s/607e329c0/images/logo-mark-grey-64.png") center no-repeat; height: 90%; -webkit-animation: pulsey 2s ease-out; -webkit-animation-iteration-count: infinite;  }
+      html.loading .trpContentPanel > * { visibility: hidden; }
+    </style>
+    <base target="_parent">");
+con.setRequestProperty("<style>
+    @font-face {
+      font-family", "'SourceSansLocal';
+      font-style: normal;
+      font-weight: bold;
+      src: local("SourceSansPro-Bold");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: italic;
+      font-weight: bold;
+      src: local("SourceSansPro-BoldIt");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: normal;
+      font-weight: 200;
+      src: local("SourceSansPro-ExtraLight");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: italic;
+      font-weight: normal;
+      src: local("SourceSansPro-It");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: normal;
+      font-weight: 300;
+      src: local("SourceSansPro-Light");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: normal;
+      font-weight: normal;
+      src: local("SourceSansPro-Regular");
+    }
+    @font-face {
+      font-family: 'SourceSansLocal';
+      font-style: normal;
+      font-weight: 600;
+      src: local("SourceSansPro-Semibold");
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+        src: url("//cdn02.gitter.im/_s/607e329c0/fonts/sourcesans/SourceSansPro-Regular.otf.woff") format('woff');
+      font-weight: normal;
+      font-style: normal
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+        src: url("//cdn01.gitter.im/_s/607e329c0/fonts/sourcesans/SourceSansPro-It.otf.woff") format('woff');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+        src: url("//cdn03.gitter.im/_s/607e329c0/fonts/sourcesans/SourceSansPro-Bold.otf.woff") format('woff');
+      font-weight: bold;
+      font-style: normal
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+        src: url("//cdn02.gitter.im/_s/607e329c0/fonts/sourcesans/SourceSansPro-Semibold.otf.woff") format('woff');
+      font-weight: 600;
+      font-style: normal
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+        src: url("//cdn01.gitter.im/_s/607e329c0/fonts/sourcesans/SourceSansPro-BoldIt.otf.woff") format('woff');
+      font-weight: bold;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+        src: url("//cdn02.gitter.im/_s/607e329c0/fonts/sourcesans/SourceSansPro-Light.otf.woff") format('woff');
+      font-weight: 300;
+      font-style: normal
+    }
+    @font-face {
+      font-family: "source-sans-pro";
+        src: url("//cdn02.gitter.im/_s/607e329c0/fonts/sourcesans/SourceSansPro-ExtraLight.otf.woff") format('woff');
+      font-weight: 200;
+      font-style: normal
+    }
+    @font-face {
+      font-family: "KaTeX_AMS";
+        src: url("//cdn02.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_AMS-Regular.woff") format('woff');
+        src: url("//cdn02.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_AMS-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Caligraphic";
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Caligraphic-Bold.woff") format('woff');
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Caligraphic-Bold.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Caligraphic";
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Caligraphic-Regular.woff") format('woff');
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Caligraphic-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Fraktur";
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Fraktur-Bold.woff") format('woff');
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Fraktur-Bold.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Fraktur";
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Fraktur-Regular.woff") format('woff');
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Fraktur-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Main";
+        src: url("//cdn02.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Main-Bold.woff") format('woff');
+        src: url("//cdn02.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Main-Bold.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Main";
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Main-BoldItalic.woff") format('woff');
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Main-BoldItalic.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Main";
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Main-Italic.woff") format('woff');
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Main-Italic.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Main";
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Main-Regular.woff") format('woff');
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Main-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Math";
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Math-BoldItalic.woff") format('woff');
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Math-BoldItalic.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Math";
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Math-Italic.woff") format('woff');
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Math-Italic.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_SansSerif";
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_SansSerif-Bold.woff") format('woff');
+        src: url("//cdn01.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_SansSerif-Bold.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_SansSerif";
+        src: url("//cdn02.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_SansSerif-Italic.woff") format('woff');
+        src: url("//cdn02.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_SansSerif-Italic.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_SansSerif";
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_SansSerif-Regular.woff") format('woff');
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_SansSerif-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Script";
+        src: url("//cdn02.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Script-Regular.woff") format('woff');
+        src: url("//cdn02.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Script-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Size1";
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Size1-Regular.woff") format('woff');
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Size1-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Size2";
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Size2-Regular.woff") format('woff');
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Size2-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Size3";
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Size3-Regular.woff") format('woff');
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Size3-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Size4";
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Size4-Regular.woff") format('woff');
+        src: url("//cdn03.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Size4-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+    @font-face {
+      font-family: "KaTeX_Typewriter";
+        src: url("//cdn02.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Typewriter-Regular.woff") format('woff');
+        src: url("//cdn02.gitter.im/_s/607e329c0/repo/katex/fonts-0.10.0/KaTeX_Typewriter-Regular.woff2") format('woff2');
+      font-weight: normal;
+      font-style: italic
+    }
+  </style>");
+con.setRequestProperty("<link rel="stylesheet" href='//cdn01.gitter.im/_s/607e329c0/sprites/services.css'>
+      <link rel="stylesheet" href='//cdn01.gitter.im/_s/607e329c0/styles/router-nli-chat.css'>", "");
+con.setRequestProperty("<link id="favicon" rel="shortcut icon" href='//cdn03.gitter.im/_s/607e329c0/images/favicon-normal.ico'><!-- Le fav and touch icons -->", "");
+con.setRequestProperty("<link rel="manifest" href="/manifest.webmanifest">", "");
+con.setRequestProperty("<meta property="og", "title" content="webpack/webpack"/>
+    <meta property="og:description" content="For questions please post on Stack Overflow and use the &#x27;webpack&#x27; tag (http://stackoverflow.com/tags/webpack)."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://avatars-03.gitter.im/group/iv/4/57542beec43b8c601976e3c5"/>
+    <meta property="fb:app_id" content=""/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:site" content="@gitchat"/>
+    <meta property="twitter:title" content="webpack/webpack"/>
+    <meta property="twitter:description" content="For questions please post on Stack Overflow and use the &#x27;webpack&#x27; tag (http://stackoverflow.com/tags/webpack)."/>
+    <meta property="twitter:image" content="https://avatars-03.gitter.im/group/iv/4/57542beec43b8c601976e3c5"/>
+  </head>
+  <body class=" iframe logged-out">
+    <div class="layout-app">
+        <script>window.__INITIAL_STATE__={"search":{"repo":{"loading":false,"error":null,"results":[]},"room":{"loading":false,"error":null,"results":[]},"people":{"loading":false,"error":null,"results":[]},"message":{"loading":false,"error":null,"results":[]},"searchInputValue":"","current":{"results":[]}},"joinRoomRequest":{"loading":false,"error":null,"results":[]},"isLoggedIn":false,"darkTheme":false,"groupMap":{},"roomMap":{"529f74f4ed5ab0b3bf04ef26":{"id":"529f74f4ed5ab0b3bf04ef26","name":"webpack\u002Fwebpack","topic":"For questions please post on Stack Overflow and use the 'webpack' tag (http:\u002F\u002Fstackoverflow.com\u002Ftags\u002Fwebpack).","avatarUrl":"https:\u002F\u002Favatars-03.gitter.im\u002Fgroup\u002Fiv\u002F4\u002F57542beec43b8c601976e3c5","uri":"webpack\u002Fwebpack","userCount":19968,"url":"\u002Fwebpack\u002Fwebpack","githubType":"REPO","security":"PUBLIC","groupId":"57542beec43b8c601976e3c5","public":true,"matrixRoomLink":"https:\u002F\u002Fmatrix.to\u002F#\u002F#webpack_webpack:gitter.im?utm_source=gitter","v":10930}},"messageMap":{},"displayedRoomId":"529f74f4ed5ab0b3bf04ef26","hightLightedMessageId":null,"leftMenuState":"all","leftMenuPinnedState":true,"leftMenuExpandedState":false,"favouriteDraggingInProgress":false,"threadMessageFeed":{"isVisible":false,"draftMessage":"","messageEditState":{"id":null,"text":null},"atTop":false,"atBottom":false,"parentId":null,"childMessagesRequest":{"loading":false,"error":null,"results":[]}},"createCommunity":{"currentStep":"step-main","communityName":"","communityNameError":null,"communitySlug":"","slugAvailabilityStatus":null,"communitySlugError":null,"selectedBackingEntity":null,"allowBadger":true,"orgs":[],"repos":[],"entityTypeTabState":"tab-orgs","orgsRequest":{"loading":false,"error":null,"results":[]},"reposRequest":{"loading":false,"error":null,"results":[]},"communitySubmitRequest":{"loading":false,"error":null,"results":[]}},"createRoom":{"adminGroupMap":{},"groupFilterText":"","selectedGroupId":null,"groupError":null,"roomName":"","roomNameError":null,"roomNameAvailabilityStatus":null,"adminRepoMap":{},"repoFilterText":"","selectedRepoId":null,"roomSecurity":"PUBLIC","onlyGithubUsers":false,"allowGroupAdmins":false,"allowBadger":true,"repos":[],"groupsRequest":{"loading":false,"error":null,"results":[]},"reposRequest":{"loading":false,"error":null,"results":[]},"roomSubmitRequest":{"loading":false,"error":null,"results":[]}}}</script><style data-vue-ssr-id="2795a402:0">.root[data-v-44ebcb1a] {
+  box-sizing: border-box;
+  z-index: 201;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  will-change: transform;
+  transition: transform 0.05s ease;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".root[data-v-44ebcb1a] *,", "");
+con.setRequestProperty(".root[data-v-44ebcb1a] *", "before,");
+con.setRequestProperty(".root[data-v-44ebcb1a] *", "after {
+  box-sizing: inherit;");
+con.setRequestProperty("}", "");
+con.setRequestProperty("@media (max-width", "900px) {");
+con.setRequestProperty(".root[data-v-44ebcb1a] {
+    position", "absolute;
+    transform: translateX(-100%);");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".root.expanded[data-v-44ebcb1a] {
+    transform", "translateX(0%);");
+con.setRequestProperty("}", "");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".layout-minibar[data-v-44ebcb1a] {
+  z-index", "1;
+  width: 7.5rem;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".layout-main-menu[data-v-44ebcb1a] {
+  width", "26.5rem;
+  transition: transform 0.1s ease;");
+con.setRequestProperty("}", "");
+con.setRequestProperty("@media not all and (max-width", "900px) {");
+con.setRequestProperty(".root", "not(.pinned).logged-in .layout-main-menu[data-v-44ebcb1a] {
+    position: absolute;
+    left: 7.5rem;
+    transform: translateX(-100%);");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".root.expanded", "not(.pinned).logged-in .layout-main-menu[data-v-44ebcb1a] {
+    transform: translateX(0%);");
+con.setRequestProperty("}", "");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".header[data-v-44ebcb1a] {
+  position", "relative;
+  display: flex;
+  flex-shrink: 0;
+  height: 65px;
+  color: #ffffff;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".header-minibar[data-v-44ebcb1a] {
+  display", "flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #753a88;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".dark-theme .header-minibar[data-v-44ebcb1a] {
+  background-color", "#2d2c2c;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".header-main-menu[data-v-44ebcb1a] {
+  display", "flex;
+  align-items: center;
+  height: 100%;
+  background-color: #753a88;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".dark-theme .header-main-menu[data-v-44ebcb1a] {
+  background-color", "#2d2c2c;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".left-menu-toggle[data-v-44ebcb1a] {
+  display", "flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  transition: background-color 0.2s ease;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".left-menu-toggle", "hover .hamburger-icon[data-v-44ebcb1a] {
+  left: -9px;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".left-menu-toggle[data-v-44ebcb1a]", "focus {
+  background-color: #f68d42;
+  outline: none;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".hamburger-icon[data-v-44ebcb1a] {
+  position", "absolute;
+  left: -13px;
+  width: 26px;
+  stroke-width: 2px;
+  vector-effect: non-scaling-stroke;
+  color: rgba(255, 255, 255, 0.7);
+  stroke: rgba(255, 255, 255, 0.7);
+  transition: left 0.2s ease;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".logo-gitter-sign[data-v-44ebcb1a] {
+  display", "block;
+  width: 18px;
+  fill: #ffffff;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".logo-text[data-v-44ebcb1a] {
+  display", "block;
+  width: 7rem;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".logo-text[data-v-44ebcb1a] > svg {
+  fill", "#ffffff;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".body[data-v-44ebcb1a] {
+  position", "relative;
+  flex: 1;
+  display: flex;
+  min-height: 0;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".body-main-menu[data-v-44ebcb1a] {
+  overflow-x", "hidden;
+  overflow-y: auto;
+  touch-action: pan-y;
+  height: 100%;
+  background-color: #fdfdfd;
+  border-right: 1px solid #f1f1f1;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".dark-theme .body-main-menu[data-v-44ebcb1a] {
+  background-color", "#383736;
+  border-right-color: #2d2c2c;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".room-list-title[data-v-44ebcb1a] {
+  text-rendering", "optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin: 0;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  padding: 0 0 0 2.6rem;
+  line-height: 65px;
+  color: #a2a3a3;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".mobile .room-list-title[data-v-44ebcb1a] {
+  padding", "0 0 0 0.5rem;
+  line-height: 50px;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".room-list[data-v-44ebcb1a] {
+  margin-left", "0;
+  list-style: none;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".nli-body[data-v-44ebcb1a] {
+  flex", "1;
+  display: block;
+  width: 34rem;
+  height: 100%;
+  padding: 20px;
+  background-color: #753a88;
+  color: #ffffff;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".nli-body a[data-v-44ebcb1a] {
+  color", "#ffffff;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".nli-primary-heading[data-v-44ebcb1a] {
+  font-family", "'source-sans-pro';
+  font-weight: 200;
+  font-size: 47px;
+  line-height: 43px;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".nli-info-block[data-v-44ebcb1a] {
+  padding", "1vh 15px;
+  margin: 10px 0px;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".nli-info-block-item[data-v-44ebcb1a] {
+  margin-top", "4px;
+  margin-bottom: 4px;");
+con.setRequestProperty("}", "");
+con.setRequestProperty("</style><div data-server-rendered="true" class="root js-left-menu-root pinned" style="transform", ";transition:;" data-v-44ebcb1a><header class="header" data-v-44ebcb1a><section class="header-minibar layout-minibar" data-v-44ebcb1a><button label="Unpin and collapse the left-menu" class="left-menu-toggle" data-v-44ebcb1a><svg viewBox="0 0 26 22" class="hamburger-icon" data-v-44ebcb1a><path d="M0,2 l26,0" data-v-44ebcb1a></path> <path d="M0,11 l26,0" data-v-44ebcb1a></path> <path d="M0,20 l26,0" data-v-44ebcb1a></path></svg> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 25" class="logo-gitter-sign" data-v-44ebcb1a><rect x="15" y="5" width="2" height="10"></rect> <rect x="10" y="5" width="2" height="20"></rect> <rect x="5" y="5" width="2" height="20"></rect> <rect width="2" height="15"></rect></svg></button></section> <section class="header-main-menu layout-main-menu" data-v-44ebcb1a><a href="https://gitter.im/?utm_source=left-menu-logo" class="logo-text" data-v-44ebcb1a><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 98.7 16.3" data-v-44ebcb1a><g><path d="M20.9,0.3h2.6v15.8h-2.6V0.3z"></path> <path d="M34.8,2.9h-4V0.3h11.8v2.6h-5.2v13.2h-2.6V2.9z"></path> <path d="M51.9,2.9h-4V0.3h11.8v2.6h-5.2v13.2h-2.6V2.9z"></path> <path d="M66.4,0.3h11.8v2.6H69v3.9h7.9v2.6H69v4h9.2v2.6H66.4V0.3z"></path> <path d="M98.7,16.1l-4.2-5.9c1.7-0.9,2.8-2.5,2.8-4.6c0-3.1-2.5-5.3-5.7-5.3l-6.2,0v15.8h2.6l0-5.3
+    c0,0,3.6,0,3.6,0l3.8,5.3H98.7z M88.1,8.2l0-5.3l3.5,0c1.7,0,3,1,3,2.6c0,1.7-1.4,2.6-3,2.6L88.1,8.2z"></path> <path d="M7.9,7.1v2.6l3.9,0c0,0,0,1.4,0,2.3c-0.1,0.2-0.4,1.8-3.8,1.8c-0.2,0-0.3,0-0.5,0
+    c-0.1,0-0.2,0-0.2,0c-0.1,0-0.2,0-0.2,0c-0.1,0-0.2-0.1-0.3-0.1c-0.1,0-0.1,0-0.2-0.1c0,0-0.1,0-0.1,0c-2.1-0.7-3.5-2.8-3.5-5.3
+    l0,0v0v0c0-0.3,0-0.5,0.1-0.8C3.3,4.7,5.4,2.5,8,2.5c0.9,0,2.5,0.3,3.6,1.5l1.5-2.2c0,0-1.3-1.9-5-1.9C3.7,0,0.4,3.3,0,7.3
+    c0,0.3,0,0.6,0,0.8l0,0l0,0c0,4.3,3.2,7.9,7.7,8.1c0.2,0,0.3,0,0.5,0c0,0,0.1,0,0.1,0c0.3,0,0.5,0,0.7,0c0.1,0,0.2,0,0.3,0
+    c0.2,0,0.3,0,0.5-0.1c2.7-0.1,4.7-2.3,4.7-3.4c0-5,0-5.7,0-5.7H7.9z"></path></g></svg></a></section></header> <section class="body nli-body" data-v-44ebcb1a><h2 class="nli-primary-heading" data-v-44ebcb1a>Where communities thrive</h2> <br data-v-44ebcb1a> <ul class="nli-info-block" data-v-44ebcb1a><li class="nli-info-block-item" data-v-44ebcb1a>
+        Join over
+        <strong data-v-44ebcb1a>1.5M+ people</strong></li> <li class="nli-info-block-item" data-v-44ebcb1a>
+        Join over
+        <strong data-v-44ebcb1a>100K+ communities</strong></li> <li class="nli-info-block-item" data-v-44ebcb1a>
+        Free
+        <strong data-v-44ebcb1a>without limits</strong></li> <li class="nli-info-block-item" data-v-44ebcb1a>
+        Create
+        <strong data-v-44ebcb1a>your own community</strong></li></ul> <ul class="nli-info-block" data-v-44ebcb1a><li class="nli-info-block-item" data-v-44ebcb1a><a href="/explore" data-v-44ebcb1a>Explore more communities</a></li></ul></section></div>");
+con.setRequestProperty("<div class="layout-app-body">
+        <div class="trpAlertWrapper" id="alert-panel">
+  <div class="trpAlertContainer">
+    <div class="trpAlertContent" id="alert-content">
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("<div class="chat-header-wrapper">
+  <header class="chat-header" id="header-wrapper">
+  <div id="header" class="chat-header-inner">
+    <div class="chat-header__main-grouping chat-header__left-menu-toggle-grouping">
+  <button class="chat-header__left-menu-toggle js-header-view-left-menu-toggle">
+    <svg class="chat-header__action-icon" viewBox="0 0 26 22">
+      <path d="M0,2 l26,0" />
+      <path d="M0,11 l26,0" />
+      <path d="M0,20 l26,0" />
+    </svg>
+  </button>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("<div class="chat-header__main-grouping chat-header__avatar-grouping">
+  <form
+    class="chat-header__avatar  js-chat-header-group-avatar-upload-form"
+    action=""
+    enctype="multipart/form-data"
+    method="POST">
+    <input type="hidden" class="js-chat-header-group-avatar-upload-signature" name="signature" value="">
+    <input type="hidden" class="js-chat-header-group-avatar-upload-params" name="params" value="">
+    <input
+      id="chat-header-group-avatar-upload-input"
+      class="chat-header__group-avatar-upload-input js-chat-header-group-avatar-upload-input"
+      name="file"
+      type="file"
+      accept="image/*"
+      disabled />
+    <label
+      class="chat-header__group-avatar-upload-label js-chat-header-group-avatar-upload-label"
+      for="chat-header-group-avatar-upload-input"
+      >
+      <img class="js-chat-header-avatar-image"  height='48' width='48' src='https", "//avatars-03.gitter.im/group/iv/4/57542beec43b8c601976e3c5?s=48' srcset='https://avatars-03.gitter.im/group/iv/4/57542beec43b8c601976e3c5?s=96 2x' >
+      <div class="chat-header__group-avatar-upload-progress hidden js-chat-header-group-avatar-upload-progress"></div>
+    </label>
+  </form>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("<div class="chat-header__main-grouping chat-header__info-grouping">
+  <div class="chat-header__heading-sub-group">
+    <h1 class="js-chat-name chat-header__heading">
+      <a href="https", "//github.com/webpack/webpack" class="chat-header__title" target="_blank">webpack/webpack</a>
+    </h1>
+  </div>
+  <div class="chat-header__topic-sub-group js-room-topic-edit-activator" tabindex="0">
+    <div class="chat-header__topic-wrapper js-room-topic-wrapper  "><p class="js-room-topic chat-header__topic  ">For questions please post on Stack Overflow and use the &#x27;webpack&#x27; tag (http://stackoverflow.com/tags/webpack).</p></div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("<div class="chat-header__main-grouping chat-header__action-grouping">
+    <a href="https", "//matrix.to/#/#webpack_webpack:gitter.im?utm_source=gitter" class="chat-header__org-page org-page-link" title="See this room on Matrix" target="_blank" rel="nofollow noopener noreferrer">
+     <img class="chat-header__action-icon chat-header__action-matrix-icon" src='//cdn01.gitter.im/_s/607e329c0/images/svg/matrix-favicon-logo-white.svg' aria-hidden="true">
+    </a>");
+con.setRequestProperty("<a href="/orgs/webpack/rooms" class="chat-header__org-page org-page-link js-chat-header-org-page-action" title="More webpack rooms">
+      <i class="chat-header__action-icon icon-globe"></i>
+    </a>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</header>
+  <div class="chat-and-toolbar-wrapper">
+    <div class="right-toolbar-region" id="right-toolbar-layout">
+  <div class="right-toolbar right-toolbar--collapsible ">", "");
+con.setRequestProperty("<div id="toolbar-top-content" class="right-toolbar__body">
+      <div id="people-list">
+        <div class="trpToolbarHeader" id="top-header">
+          <h5 class="trpToolbarHeaderItem selected" id="people-header">
+            People
+          </h5>
+          <h5 class="trpToolbarHeaderItem " id="info-header">
+              Repo info
+          </h5>
+        </div>
+        <div class="trpToolbarList">
+          <div class="trpToolbarListContent" id="people-roster">
+            <div>
+              <span class="frame-people">
+  <span id="roster-region">
+    <ul id="roster-view" class="roster">
+      <li class="js-model-id-529c6a8ded5ab0b3bf04d3ae">
+        <div
+  class="trpDisplayPicture avatar-529c6a8ded5ab0b3bf04d3ae avatar-s offline admin ">
+  <img src="https", "//avatars0.githubusercontent.com/sokra?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/sokra?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a0ded5ab0b3bf04d24b">
+        <div
+  class="trpDisplayPicture avatar-529c6a0ded5ab0b3bf04d24b avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/AsaAyers?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/AsaAyers?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a0ced5ab0b3bf04d248">
+        <div
+  class="trpDisplayPicture avatar-529c6a0ced5ab0b3bf04d248 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/asan?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/asan?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6b3ced5ab0b3bf04d597">
+        <div
+  class="trpDisplayPicture avatar-529c6b3ced5ab0b3bf04d597 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/confraria?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/confraria?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6ab5ed5ab0b3bf04d41d">
+        <div
+  class="trpDisplayPicture avatar-529c6ab5ed5ab0b3bf04d41d avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/Couto?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/Couto?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6ad4ed5ab0b3bf04d474">
+        <div
+  class="trpDisplayPicture avatar-529c6ad4ed5ab0b3bf04d474 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/grimor?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/grimor?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6ad8ed5ab0b3bf04d47f">
+        <div
+  class="trpDisplayPicture avatar-529c6ad8ed5ab0b3bf04d47f avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/horte?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/horte?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a31ed5ab0b3bf04d2ae">
+        <div
+  class="trpDisplayPicture avatar-529c6a31ed5ab0b3bf04d2ae avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/jacortinas?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/jacortinas?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c69e4ed5ab0b3bf04d1d7">
+        <div
+  class="trpDisplayPicture avatar-529c69e4ed5ab0b3bf04d1d7 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/jeyraof?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/jeyraof?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a8fed5ab0b3bf04d3b5">
+        <div
+  class="trpDisplayPicture avatar-529c6a8fed5ab0b3bf04d3b5 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/jfsiii?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/jfsiii?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a17ed5ab0b3bf04d265">
+        <div
+  class="trpDisplayPicture avatar-529c6a17ed5ab0b3bf04d265 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/jtanguy?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/jtanguy?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c69c2ed5ab0b3bf04d176">
+        <div
+  class="trpDisplayPicture avatar-529c69c2ed5ab0b3bf04d176 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/jvanbaarsen?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/jvanbaarsen?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a51ed5ab0b3bf04d309">
+        <div
+  class="trpDisplayPicture avatar-529c6a51ed5ab0b3bf04d309 avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/kossnocorp?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/kossnocorp?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a00ed5ab0b3bf04d226">
+        <div
+  class="trpDisplayPicture avatar-529c6a00ed5ab0b3bf04d226 avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/L8D?v=3&amp;s=30" srcset="https://avatars2.githubusercontent.com/L8D?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c69b3ed5ab0b3bf04d14a">
+        <div
+  class="trpDisplayPicture avatar-529c69b3ed5ab0b3bf04d14a avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/leemour?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/leemour?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6b2ced5ab0b3bf04d56b">
+        <div
+  class="trpDisplayPicture avatar-529c6b2ced5ab0b3bf04d56b avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/lettertwo?v=3&amp;s=30" srcset="https://avatars0.githubusercontent.com/lettertwo?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-5298e353ed5ab0b3bf04c98a">
+        <div
+  class="trpDisplayPicture avatar-5298e353ed5ab0b3bf04c98a avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/malditogeek?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/malditogeek?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c69dfed5ab0b3bf04d1c7">
+        <div
+  class="trpDisplayPicture avatar-529c69dfed5ab0b3bf04d1c7 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/matthewwithanm?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/matthewwithanm?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a3fed5ab0b3bf04d2d7">
+        <div
+  class="trpDisplayPicture avatar-529c6a3fed5ab0b3bf04d2d7 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/mhaligowski?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/mhaligowski?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a22ed5ab0b3bf04d284">
+        <div
+  class="trpDisplayPicture avatar-529c6a22ed5ab0b3bf04d284 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/monokrome?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/monokrome?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a86ed5ab0b3bf04d39c">
+        <div
+  class="trpDisplayPicture avatar-529c6a86ed5ab0b3bf04d39c avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/mrtnbroder?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/mrtnbroder?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c69b1ed5ab0b3bf04d146">
+        <div
+  class="trpDisplayPicture avatar-529c69b1ed5ab0b3bf04d146 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/pidgpowell?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/pidgpowell?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a6eed5ab0b3bf04d359">
+        <div
+  class="trpDisplayPicture avatar-529c6a6eed5ab0b3bf04d359 avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/rbartoli?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/rbartoli?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-5298e2d5ed5ab0b3bf04c980">
+        <div
+  class="trpDisplayPicture avatar-5298e2d5ed5ab0b3bf04c980 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/suprememoocow?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/suprememoocow?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+      <li class="js-model-id-529c6a3ded5ab0b3bf04d2d1">
+        <div
+  class="trpDisplayPicture avatar-529c6a3ded5ab0b3bf04d2d1 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/timdorr?v=3&amp;s=30" srcset="https://avatars1.githubusercontent.com/timdorr?v=3&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">
+  <div class="trpStatus" id="status"> </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li>
+    </ul>
+  </span>", "");
+con.setRequestProperty("<div id="remaining-region" class="remaining-region"></div>", "");
+con.setRequestProperty("</span>", "");
+con.setRequestProperty("</div>
+          </div>
+          <div class="trpToolbarListContent" id="repo-info" style="display", "none"></div>
+        </div>
+      </div>");
+con.setRequestProperty("<div id="activity-region" class="right-toolbar-activity-area">
+        <div  class="right-toolbar-activity-area-inner" >", "");
+con.setRequestProperty("<div class="trpToolbarHeader">
+  <h5 class="trpToolbarHeaderItem selected" id="activity-header">Activity</h5>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("<ul class="right-toolbar-activity-list u-font-smaller" id="activity-list"><li  class="activity-item model-id-60f45eaf38da567d82a93679" ><div class="activity-item-inner github-push">
+  <i class='octicon octicon-repo-push activity-item__icon'></i>
+  <div class="activity-time" id="time">17", "02</div>");
+con.setRequestProperty("<div class="gtrActivityItemText">
+    <p class="activity-commit">
+      <span class='mention' data-link-type="mention" data-screen-name="sokra">sokra</span> on main
+    </p>
+    <p class="activity-commit">
+      <span data-link-type="commit" data-commit-sha="e852415cd515f421f82dc3be56eb6e9dae192757" data-commit-repo="webpack/webpack" class="commit">Allow HMR status handlers to re…</span> <span data-link-type="commit" data-commit-sha="ef4aa56755d7a05f7caf048706fcd94c1bb9eda6" data-commit-repo="webpack/webpack" class="commit">Dispose and apply must run atom…</span> <span data-link-type="commit" data-commit-sha="a87dba421a245f672027493af0760f2a1826fac9" data-commit-repo="webpack/webpack" class="commit">Merge pull request #13576 from …</span> <a href="https", "//github.com/webpack/webpack/compare/7102df3bb52a...a87dba421a24" target="_blank" style="opacity: 0.6">(compare)</a>
+    </p>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f45ea30853e41c0d64b7cb" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">17", "02</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="sokra">sokra</span> closed <a class="issue closed" href="https", "//github.com/webpack/webpack/pull/13576" target="_blank" data-link-type="issue" data-issue="13576" data-issue-repo="webpack/webpack">#13576</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f4155448f9b1084a38054e" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">11", "49</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="webpack-bot">webpack-bot</span> labeled <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13819" target="_blank" data-link-type="issue" data-issue="13819" data-issue-repo="webpack/webpack">#13819</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f40c330853e41c0d6414a2" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">11", "10</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="webpack-bot">webpack-bot</span> labeled <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13819" target="_blank" data-link-type="issue" data-issue="13819" data-issue-repo="webpack/webpack">#13819</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f40c2d82dd9050f5f9d20c" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">11", "10</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="meetdheeraj">meetdheeraj</span> opened <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13819" target="_blank" data-link-type="issue" data-issue="13819" data-issue-repo="webpack/webpack">#13819</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f239a067b72e1bfe16c981" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 17 02", "00</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="webpack-bot">webpack-bot</span> labeled <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13815" target="_blank" data-link-type="issue" data-issue="13815" data-issue-repo="webpack/webpack">#13815</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e927ec10653d5a445f3f" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 20", "16</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="xtuc">xtuc</span> edited <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13815" target="_blank" data-link-type="issue" data-issue="13815" data-issue-repo="webpack/webpack">#13815</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e916049a0c3e53792273" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 20", "16</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="xtuc">xtuc</span> synchronize <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13815" target="_blank" data-link-type="issue" data-issue="13815" data-issue-repo="webpack/webpack">#13815</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e7a367b72e1bfe1629e5" ><div class="activity-item-inner github-push">
+  <i class='octicon octicon-repo-push activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 20", "10</div>");
+con.setRequestProperty("<div class="gtrActivityItemText">
+    <p class="activity-commit">
+      <span class='mention' data-link-type="mention" data-screen-name="sokra">sokra</span> on main
+    </p>
+    <p class="activity-commit">
+      <span data-link-type="commit" data-commit-sha="7102df3bb52a33529ff5db4fdf34484d2a359a49" data-commit-repo="webpack/webpack" class="commit">5.45.1</span> <a href="https", "//github.com/webpack/webpack/compare/e15752ce9f61...7102df3bb52a" target="_blank" style="opacity: 0.6">(compare)</a>
+    </p>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e7a3f1274d5e50517feb" ><div class="activity-item-inner github-push">
+  <i class='octicon octicon-repo-push activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 20", "10</div>");
+con.setRequestProperty("<div class="gtrActivityItemText">
+    <p class="activity-commit">
+      <span class='mention' data-link-type="mention" data-screen-name="sokra">sokra</span> on v5.45.1
+    </p>
+    <p class="activity-commit">
+      <a href="https", "//github.com/webpack/webpack/compare/v5.45.1" target="_blank" style="opacity: 0.6">(compare)</a>
+    </p>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e5f667b72e1bfe1625ed" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 20", "03</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="webpack-bot">webpack-bot</span> unlabeled <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13815" target="_blank" data-link-type="issue" data-issue="13815" data-issue-repo="webpack/webpack">#13815</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e5f317929c14e68f294c" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 20", "02</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="xtuc">xtuc</span> synchronize <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13815" target="_blank" data-link-type="issue" data-issue="13815" data-issue-repo="webpack/webpack">#13815</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e520515cab3e4fbff24e" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 19", "59</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="xtuc">xtuc</span> edited <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13815" target="_blank" data-link-type="issue" data-issue="13815" data-issue-repo="webpack/webpack">#13815</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e501f1274d5e505179e9" ><div class="activity-item-inner github-push">
+  <i class='octicon octicon-repo-push activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 19", "58</div>");
+con.setRequestProperty("<div class="gtrActivityItemText">
+    <p class="activity-commit">
+      <span class='mention' data-link-type="mention" data-screen-name="sokra">sokra</span> on main
+    </p>
+    <p class="activity-commit">
+      <span data-link-type="commit" data-commit-sha="1d8f9fd4d0783bfd790333881c7cd69e2180fa17" data-commit-repo="webpack/webpack" class="commit">Fix", "overwritten __webpack_expo…</span> <span data-link-type="commit" data-commit-sha="3b65860614a10b7ac1209e0a947d4693c84537f2" data-commit-repo="webpack/webpack" class="commit">Chore: add test case for issue …</span> <span data-link-type="commit" data-commit-sha="c469adc2651437d9c115a41389ff7e3794416733" data-commit-repo="webpack/webpack" class="commit">fix handling of onChunksLoaded …</span> and 2 more <a href="https://github.com/webpack/webpack/compare/e5570ab5230e...e15752ce9f61" target="_blank" style="opacity: 0.6">(compare)</a>
+    </p>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e500049a0c3e53791aa1" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 19", "58</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="sokra">sokra</span> closed <a class="issue closed" href="https", "//github.com/webpack/webpack/pull/13431" target="_blank" data-link-type="issue" data-issue="13431" data-issue-repo="webpack/webpack">#13431</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e4fa049a0c3e53791a88" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 19", "58</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="sokra">sokra</span> synchronize <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13431" target="_blank" data-link-type="issue" data-issue="13431" data-issue-repo="webpack/webpack">#13431</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e4607b5a415e65ed28d7" ><div class="activity-item-inner github-push">
+  <i class='octicon octicon-repo-push activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 19", "56</div>");
+con.setRequestProperty("<div class="gtrActivityItemText">
+    <p class="activity-commit">
+      <span class='mention' data-link-type="mention" data-screen-name="sokra">sokra</span> on issue-1342-from-css-loader
+    </p>
+    <p class="activity-commit">
+      <a href="https", "//github.com/webpack/webpack/compare/daa40670fc3d...000000000000" target="_blank" style="opacity: 0.6">(compare)</a>
+    </p>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e460515cab3e4fbff06a" ><div class="activity-item-inner github-push">
+  <i class='octicon octicon-repo-push activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 19", "56</div>");
+con.setRequestProperty("<div class="gtrActivityItemText">
+    <p class="activity-commit">
+      <span class='mention' data-link-type="mention" data-screen-name="sokra">sokra</span> on main
+    </p>
+    <p class="activity-commit">
+      <span data-link-type="commit" data-commit-sha="d25cbc5211a0699fc11bb0297c9ef4ac4d89019d" data-commit-repo="webpack/webpack" class="commit">fix", "data URI for &#x60;image/svg+xm…</span> <span data-link-type="commit" data-commit-sha="478457ba48e6a532bf6e9677e57e7bb2f781f0e7" data-commit-repo="webpack/webpack" class="commit">fix: case insensitivity</span> <span data-link-type="commit" data-commit-sha="c45064f9127ccff23a4fa94cdda50be35087c23a" data-commit-repo="webpack/webpack" class="commit">fix: encoding</span> and 2 more <a href="https://github.com/webpack/webpack/compare/61946b7c4658...e5570ab5230e" target="_blank" style="opacity: 0.6">(compare)</a>
+    </p>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e45f049a0c3e5379191c" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 19", "56</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="sokra">sokra</span> closed <a class="issue closed" href="https", "//github.com/webpack/webpack/pull/13807" target="_blank" data-link-type="issue" data-issue="13807" data-issue-repo="webpack/webpack">#13807</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li><li  class="activity-item model-id-60f1e442f2b4077d6bcea710" ><div class="activity-item-inner github-pull-request">
+  <i class='octicon octicon-git-pull-request activity-item__icon'></i>
+  <div class="activity-time" id="time">Jul 16 19", "55</div>");
+con.setRequestProperty("<div class="gtrActivityItemText"><span class='mention' data-link-type="mention" data-screen-name="webpack-bot">webpack-bot</span> unlabeled <a class="issue open" href="https", "//github.com/webpack/webpack/pull/13815" target="_blank" data-link-type="issue" data-issue="13815" data-issue-repo="webpack/webpack">#13815</a></div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</li></ul>", "");
+con.setRequestProperty("</div>
+      </div>
+    </div>", "");
+con.setRequestProperty("<div id="right-toolbar-footer-region" class="right-toolbar-region__footer">
+      <svg
+           class="menu-toggle-icon js-menu-toggle-icon"
+           width="30px"
+           height="34px"
+           viewBox="0 0 30 34"
+       >
+        <path d="M0,6 l15,0 l15,0" />
+        <path d="M0,17 l15,0 l15,0" />
+        <path d="M0,28 l15,0 l15,0" />
+      </svg>
+    </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+    <script>window.__INITIAL_STATE__={"search"", "{"repo":{"loading":false,"error":null,"results":[]},"room":{"loading":false,"error":null,"results":[]},"people":{"loading":false,"error":null,"results":[]},"message":{"loading":false,"error":null,"results":[]},"searchInputValue":"","current":{"results":[]}},"joinRoomRequest":{"loading":false,"error":null,"results":[]},"isLoggedIn":false,"darkTheme":false,"groupMap":{},"roomMap":{"529f74f4ed5ab0b3bf04ef26":{"id":"529f74f4ed5ab0b3bf04ef26","name":"webpack\u002Fwebpack","topic":"For questions please post on Stack Overflow and use the 'webpack' tag (http:\u002F\u002Fstackoverflow.com\u002Ftags\u002Fwebpack).","avatarUrl":"https:\u002F\u002Favatars-03.gitter.im\u002Fgroup\u002Fiv\u002F4\u002F57542beec43b8c601976e3c5","uri":"webpack\u002Fwebpack","userCount":19968,"url":"\u002Fwebpack\u002Fwebpack","githubType":"REPO","security":"PUBLIC","groupId":"57542beec43b8c601976e3c5","public":true,"matrixRoomLink":"https:\u002F\u002Fmatrix.to\u002F#\u002F#webpack_webpack:gitter.im?utm_source=gitter","v":10930}},"messageMap":{},"displayedRoomId":"529f74f4ed5ab0b3bf04ef26","hightLightedMessageId":null,"leftMenuState":"all","leftMenuPinnedState":true,"leftMenuExpandedState":false,"favouriteDraggingInProgress":false,"threadMessageFeed":{"isVisible":false,"draftMessage":"","messageEditState":{"id":null,"text":null},"atTop":false,"atBottom":false,"parentId":null,"childMessagesRequest":{"loading":false,"error":null,"results":[]}},"createCommunity":{"currentStep":"step-main","communityName":"","communityNameError":null,"communitySlug":"","slugAvailabilityStatus":null,"communitySlugError":null,"selectedBackingEntity":null,"allowBadger":true,"orgs":[],"repos":[],"entityTypeTabState":"tab-orgs","orgsRequest":{"loading":false,"error":null,"results":[]},"reposRequest":{"loading":false,"error":null,"results":[]},"communitySubmitRequest":{"loading":false,"error":null,"results":[]}},"createRoom":{"adminGroupMap":{},"groupFilterText":"","selectedGroupId":null,"groupError":null,"roomName":"","roomNameError":null,"roomNameAvailabilityStatus":null,"adminRepoMap":{},"repoFilterText":"","selectedRepoId":null,"roomSecurity":"PUBLIC","onlyGithubUsers":false,"allowGroupAdmins":false,"allowBadger":true,"repos":[],"groupsRequest":{"loading":false,"error":null,"results":[]},"reposRequest":{"loading":false,"error":null,"results":[]},"roomSubmitRequest":{"loading":false,"error":null,"results":[]}}}</script><style data-vue-ssr-id="7c73d085:0">.root[data-v-3b2f1a78] {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  order: 2;
+  display: none;
+  /*
+  The TMF width changes between 300px and 600px boundaries.
+  Within this boundary it tries to be 40% of the space taken by
+  both panels (MMF - 60%, TMF - 40%)
+  */
+  min-width: 300px;
+  max-width: 600px;
+  width: 40%;
+  color: #333;
+  text-align: left;
+  box-sizing: border-box;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".root.opened[data-v-3b2f1a78] {
+  display", "flex;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".mobile .root.opened[data-v-3b2f1a78] {
+  position", "absolute;
+  z-index: 1001;
+  width: 100%;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".root[data-v-3b2f1a78] *,", "");
+con.setRequestProperty(".root[data-v-3b2f1a78] *", "before,");
+con.setRequestProperty(".root[data-v-3b2f1a78] *", "after {
+  box-sizing: inherit;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".body[data-v-3b2f1a78] {
+  height", "100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfdfd;
+  border-left: 1px solid #f1f1f1;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".dark-theme .body[data-v-3b2f1a78] {
+  background-color", "#383736;
+  border-left-color: #2d2c2c;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".content[data-v-3b2f1a78] {
+  flex-grow", "1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".error-box[data-v-3b2f1a78] {
+  margin", "10px;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".chat-messages .error-box[data-v-3b2f1a78] {
+  margin-left", "50px;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".loading-message[data-v-3b2f1a78] {
+  margin-left", "10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;");
+con.setRequestProperty("}", "");
+con.setRequestProperty(".chat-messages[data-v-3b2f1a78] {
+  width", "100%;
+  display: inline-block;
+  overflow: auto;
+  flex-grow: 1;");
+con.setRequestProperty("}", "");
+con.setRequestProperty("</style><div data-server-rendered="true" class="js-thread-message-feed-root root" data-v-3b2f1a78><!----></div>
+    <div class="chat-app">
+      <div class="collaborators-container" id="collaborators-container"></div>
+      <div class="trpContentPanel" id="content-wrapper">
+  <div>
+    <div class="trpChatPanel">", "");
+con.setRequestProperty("<div id="unread-banner" style="display", "none"></div>
+      <div id="bottom-unread-banner" style="display:none"></div>");
+con.setRequestProperty("<div id="content-frame" class="trpChatContainer primary-scroll chat-container" role="log" aria-live="polite" aria-atomic="false" aria-relevant="additions text">
+        <div id="chat-container" role="list">
+            <div>
+                <div class="chat-item model-id-60d967eb8a40b1172831398e burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-60d967576da03739847fd30b avatar-s offline  ">
+  <img src="https", "//secure.gravatar.com/avatar/0ebf0265c630be44208c8005592fcdf6?s=30&amp;d=identicon" srcset="https://secure.gravatar.com/avatar/0ebf0265c630be44208c8005592fcdf6?s=60&amp;d=identicon 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Trent Murray</div>
+      <div class='chat-item__username js-chat-item-from'>@trentmurray_gitlab</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60d967eb8a40b1172831398e' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      But changes aren&#39;t being picked up. Any ideas?
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60d977b08c12474d8cd81ccf burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-60d96f3f6da03739847fd393 avatar-s offline  ">
+  <img src="https", "//secure.gravatar.com/avatar/173c0ee02b874fb03c9c798a35df3fe5?s=30&amp;d=identicon" srcset="https://secure.gravatar.com/avatar/173c0ee02b874fb03c9c798a35df3fe5?s=60&amp;d=identicon 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Shatta Gold</div>
+      <div class='chat-item__username js-chat-item-from'>@Shatta_gitlab</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60d977b08c12474d8cd81ccf' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      Having problems installing python3
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60d97da7effd491d8c8bb0b2 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-60d967576da03739847fd30b avatar-s offline  ">
+  <img src="https", "//secure.gravatar.com/avatar/0ebf0265c630be44208c8005592fcdf6?s=30&amp;d=identicon" srcset="https://secure.gravatar.com/avatar/0ebf0265c630be44208c8005592fcdf6?s=60&amp;d=identicon 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Trent Murray</div>
+      <div class='chat-item__username js-chat-item-from'>@trentmurray_gitlab</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60d97da7effd491d8c8bb0b2' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      <span data-link-type="mention" data-screen-name="Shatta_gitlab" class="mention">@Shatta_gitlab</span> - this is a webpack channel.
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60d984b765513b4d9136edfe burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-5cbfd822d73408ce4fbe8182 avatar-s offline  ">
+  <img src="https", "//assets.gitlab-static.net/uploads/-/system/user/avatar/2393946/avatar.png?s=30" srcset="https://assets.gitlab-static.net/uploads/-/system/user/avatar/2393946/avatar.png?s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>peace</div>
+      <div class='chat-item__username js-chat-item-from'>@inpeace_gitlab</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60d984b765513b4d9136edfe' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      Does anyone have any experience in working with a Rails webpacker + Angular project? I have been trying to setup a project like that a couple of days with no success. It feels like those things are never meant to work together. 
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60d99ce1457e19611a227bf6 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-569da764e610378809bcfed1 avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/u/3717031?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/3717031?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Khoa Nguyen</div>
+      <div class='chat-item__username js-chat-item-from'>@KhoaSydney</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60d99ce1457e19611a227bf6' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      Any idea on how to fix this?
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60d9a393110daa37b10d852a burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-569da764e610378809bcfed1 avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/u/3717031?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/3717031?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Khoa Nguyen</div>
+      <div class='chat-item__username js-chat-item-from'>@KhoaSydney</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60d9a393110daa37b10d852a' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      webpack.cache.PackFileCacheStrategy] Restoring failed for Compilation/modules|C:\Projects\Development\Midwinter.AdviceOS.Web");
+con.setRequestProperty("ode_modules\webpack\hot|sync|nonrecursive|/^.\/log$/ from pack", "RangeError [ERR_BUFFER_OUT_OF_BOUNDS]: Attempt to access memory outside buffer bounds
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60db0eb0bcb3e8060eee93a5 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-60db0e3a6da03739847fee54 avatar-s offline  ">
+  <img src="https", "//secure.gravatar.com/avatar/bfea8a115f97019e4df5579c2806c522?s=30&amp;d=identicon" srcset="https://secure.gravatar.com/avatar/bfea8a115f97019e4df5579c2806c522?s=60&amp;d=identicon 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>vikrampaul vikrampaul</div>
+      <div class='chat-item__username js-chat-item-from'>@vikrampaul93_gitlab</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60db0eb0bcb3e8060eee93a5' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      how to fix this?
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60dc4e0cf862a72a30dfc219 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-57dd2ad240f3a6eec065bc95 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/u/22243137?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/22243137?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Vishvesh</div>
+      <div class='chat-item__username js-chat-item-from'>@V1shvesh</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60dc4e0cf862a72a30dfc219' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      Hey everyone,<br>Can anyone help me figure out the version compatibility between webpack-dev-server and webpack versions? Is there a table or doc where I can get this info?
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60dc7437110daa37b113fefd burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-55b6b02f0fc9f982beab2e72 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/u/1352422?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/1352422?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Sokratis Vidros</div>
+      <div class='chat-item__username js-chat-item-from'>@SokratisVidros</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60dc7437110daa37b113fefd' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      Hi there. I am building an npm library (lib A) with webpack that imports another npm library dynamically via <code>const somePkg = await import(/* webpackIgnore: true */ &#39;https://unpkg.com/some_package&#39;);</code> The final bundle works in the browser. However if I import lib A in another project, webpack tries to statically resolve the <code>unpkg.com/some_package</code> import. Is there a way to tell to host application webpack to ignore the <code>unpkg.com</code> import or preserve the initial <code>webpackIgnore: true</code> comment in the minified bundle?
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60dea9ee24f0ae2a243bdffd burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-57de153640f3a6eec065d68e avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/u/979001?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/979001?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Mike Ledger</div>
+      <div class='chat-item__username js-chat-item-from'>@mikeplus64</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60dea9ee24f0ae2a243bdffd' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      anyone find webpack going OOM with 5.x? are there any common fixes for this other using --max-old-space-size=8182 (which I don&#39;t find actually works)
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60deaacb24f0ae2a243be217 burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      or is there a way to debug what plugin (if any) is causing the oom?
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60df1755effd491d8c9844cd burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-5f2a6657d73408ce4feb6606 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/u/50441492?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/50441492?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Ali Ebadian</div>
+      <div class='chat-item__username js-chat-item-from'>@ebadian</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60df1755effd491d8c9844cd' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      hi All,<br>I am trying use webpack to build our current project. At the moment we use some mvn plugin to bundle everything into a single file and minify it.<br>When I google how to do the same with webpack the advice out there isn&#39;t informative. Do you guys know of a good  resource for guidance?
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e2bc7b457e19611a36367e burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-60b8c5b26da03739847e0cd2 avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/u/45148577?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/45148577?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Helge</div>
+      <div class='chat-item__username js-chat-item-from'>@Tylopilus</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60e2bc7b457e19611a36367e' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      <p>Hi guys, I need some advice how to work with file-loader. I want to have each required asset copied to a relative path of my final dist bundle. Exactly like this:<br><a target="_blank" data-link-type="issue" data-issue="114" href="https://github.com/webpack-contrib/file-loader/issues/114" data-provider="github" data-issue-repo="webpack-contrib/file-loader" class="issue">webpack-contrib/file-loader#114</a></p><p>I have modified my publicPath and even tho the file is getting put into the correct dict like /component1/assets/filename this introduces an issue as the import of the file is not relative anymore. my js is stored under /component/js/file.js and the import should be ../../assets but it gets overwritten to /component1/assets which will not work in my final build.</p><p>Any advice how to: put the file relative to the entry-point name but still maintain the relative import path that I specified in the js or css ?</p>
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e42442457e19611a394439 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-5f2a6657d73408ce4feb6606 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/u/50441492?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/50441492?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Ali Ebadian</div>
+      <div class='chat-item__username js-chat-item-from'>@ebadian</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60e42442457e19611a394439' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      I think this chat is kinda deal.
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e4801e8c12474d8ceffe63 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-552757e915522ed4b3deca3d avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/u/4252088?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/4252088?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Randall Gonzalez</div>
+      <div class='chat-item__username js-chat-item-from'>@Ranguro</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60e4801e8c12474d8ceffe63' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      Hello all, I have a missing loader in my project but not quite sure which one it is. The problem occurs when it finds a React Fragmented &lt;&gt;
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e48041effd491d8ca35cf5 burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      React fragmet like this &lt;&gt;. Thoughts ideas?
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e64463effd491d8ca776b2 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-55c4c32b0fc9f982beac97ac avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/u/1692592?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/1692592?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Michael Luo</div>
+      <div class='chat-item__username js-chat-item-from'>@missing1984</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60e64463effd491d8ca776b2' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      Hello all. Got a quick question. what&#39;s the best way to dedupe webpack plugins? Do we enforce id or name in plugin api?
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e733837473bf3d7814808f burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-55a07a4d5e0d51bd787afaf2 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/u/8161573?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/8161573?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>kylegoetz</div>
+      <div class='chat-item__username js-chat-item-from'>@kylegoetz</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60e733837473bf3d7814808f' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      <p>I have a React project and in the build process get a WEBPACK ERROR <a target="_blank" data-link-type="issue" data-issue="98123" class="issue">#98123</a>. <code>Unexpected token (8:9)</code>.  Line 7–9 of the file in question are</p><pre><code><span class="keyword">import</span> {Iso} <span class="keyword">from</span> <span class="string">'monocle-ts'</span>");
+con.setRequestProperty("<span class="keyword">import</span> { DescriptionValuePair } <span class="keyword">from</span> <span class="string">'..'</span>", "");
+con.setRequestProperty("<span class="keyword">import</span> { JavaEnvelopedAssemblyType } <span class="keyword">from</span> <span class="string">'./java-assembly-type'</span></code></pre><p>How can I get webpack to actually tell me what the unexpected token is? <code>(8", "9)</code> corresponds to a blank space after the <code>{</code> and before <code>DescriptionValuePair</code>. My IDE (WebStorm) does not report any error in my code.</p>
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e733c148f9b1084a1c09c5 burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      I&#39;ve added trailing semicolons, doesn&#39;t fix the issue. I comment out line 8 and add its contents to the file, and when I try to build, then line 9 reports unexpected token. If I do the same with line 9, then line 10 has the unexpected token. This seems to imply something in lines 1-7 has something wrong with it, but I don&#39;t see anything, nor does my IDE.
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e733f167b72e1bfefe7a8d burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      Hm, chat looks dead and topic says to use SO (Webpack&#39;s Github says to use Gitter) I&#39;ll go ask there
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e7848967b72e1bfeff41a1 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-5a82220ad73408ce4f8cdcb1 avatar-s offline  ">
+  <img src="https", "//avatars1.githubusercontent.com/u/1385801?v=4&amp;s=30" srcset="https://avatars1.githubusercontent.com/u/1385801?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Ivan Yurov</div>
+      <div class='chat-item__username js-chat-item-from'>@youroff</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60e7848967b72e1bfeff41a1' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      Hey everyone! How can I perform dynamic import with query params? I have basic example with <code>React.lazy</code> working just fine, but I need to include some kind of token along with module url. When I do that, it breaks with <code>module not found</code>. Alternatively I tried to move the part of application that I need to put behind auth into a separate bundle and add <code>webpackIgnore: true</code> comment, but now I need to build only that sub-bundle as ES module, how would I do that?
+    </div>
+      <div class='chat-item__thread-message-indicator parent-message-indicator js-parent-message-indicator'>
+        <img class="chat-item__pmi-icon" src="//cdn01.gitter.im/_s/607e329c0/images/svg/corner-down-right.svg" /> 9 replies
+      </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e7851423fd26511d9fa601 burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      <pre><code>  const App = lazy(<span class="function"><span class="params">()</span> =&gt;</span> import(<span class="string">'./protected?token='</span> + token));
+  <span class="comment"># protected\", "5 Uncaught Error: Cannot find module './protected?token=XXXX'</span>");
+con.setRequestProperty("<span class="keyword">return</span> &lt;Suspense fallback={&lt;div&gt;Loading... &lt;/div&gt;}&gt;
+    {token &amp;&amp; &lt;App<span class="regexp">/&gt; || &lt;Login/</span>&gt;}  
+  &lt;/Suspense&gt;;</code></pre>
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e7ca127b5a415e65d6a10e burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-60e7c8d36da037398480a616 avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/u/20949823?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/20949823?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>olabala</div>
+      <div class='chat-item__username js-chat-item-from'>@olabala</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60e7ca127b5a415e65d6a10e' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      <p>Hello all, I got an error when I  migrate to webpack5 from webpack4</p><pre><code><span class="string">Error:</span> Cannot get <span class="keyword">final</span> name <span class="keyword">for</span> export <span class="string">'babelPluginFlowReactPropTypes_proptype_AnimationTimeoutId'</span> of .<span class="regexp">/node_modules/</span>react-virtualized<span class="regexp">/dist/</span>es<span class="regexp">/utils/</span>requestAnimationTimeout.js");
+con.setRequestProperty("<span class="keyword">while</span> generating the root export <span class="string">'babelPluginFlowReactPropTypes_proptype_AnimationTimeoutId'</span> (used <span class="string">name", "</span> <span class="string">'rM'</span>)
+    at getFinalBinding (<span class="regexp">/Users/</span>xx<span class="regexp">/Desktop/</span>xx<span class="regexp">/chat/</span>node_modules<span class="regexp">/webpack/</span>lib<span class="regexp">/optimize/</span>ConcatenatedModule.<span class="string">js:</span><span class="number">467</span>:<span class="number">10</span>)
+    at getFinalName (<span class="regexp">/Users/</span>xx<span class="regexp">/Desktop/</span>xx<span class="regexp">/chat/</span>node_modules<span class="regexp">/webpack/</span>lib<span class="regexp">/optimize/</span>ConcatenatedModule.<span class="string">js:</span><span class="number">523</span>:<span class="number">18</span>)
+    at <span class="regexp">/Users/</span>xx<span class="regexp">/Desktop/</span>xx<span class="regexp">/chat/</span>node_modules<span class="regexp">/webpack/</span>lib<span class="regexp">/optimize/</span>ConcatenatedModule.<span class="string">js:</span><span class="number">1387</span>:<span class="number">24</span>
+    at ConcatenatedModule.codeGeneration (<span class="regexp">/Users/</span>xx<span class="regexp">/Desktop/</span>xx<span class="regexp">/chat/</span>node_modules<span class="regexp">/webpack/</span>lib<span class="regexp">/optimize/</span>ConcatenatedModule.<span class="string">js:</span><span class="number">1435</span>:<span class="number">7</span>)
+    at <span class="regexp">/Users/</span>xx<span class="regexp">/Desktop/</span>xx<span class="regexp">/chat/</span>node_modules<span class="regexp">/webpack/</span>lib/Compilation.<span class="string">js:</span><span class="number">2727</span>:<span class="number">22</span>
+    at <span class="regexp">/Users/</span>xx<span class="regexp">/Desktop/</span>xx<span class="regexp">/chat/</span>node_modules<span class="regexp">/webpack/</span>lib/Cache.<span class="string">js:</span><span class="number">93</span>:<span class="number">5</span>
+    at Hook.eval [<span class="keyword">as</span> callAsync] (eval at create (<span class="regexp">/Users/</span>xx<span class="regexp">/Desktop/</span>xx<span class="regexp">/chat/</span>node_modules<span class="regexp">/tapable/</span>lib/HookCodeFactory.<span class="string">js:</span><span class="number">33</span>:<span class="number">10</span>), &lt;anonymous&gt;:<span class="number">6</span>:<span class="number">1</span>)
+    at Cache.get (<span class="regexp">/Users/</span>xx<span class="regexp">/Desktop/</span>xx<span class="regexp">/chat/</span>node_modules<span class="regexp">/webpack/</span>lib/Cache.<span class="string">js:</span><span class="number">75</span>:<span class="number">18</span>)
+    at ItemCacheFacade.get (<span class="regexp">/Users/</span>xx<span class="regexp">/Desktop/</span>xx<span class="regexp">/chat/</span>node_modules<span class="regexp">/webpack/</span>lib/CacheFacade.<span class="string">js:</span><span class="number">117</span>:<span class="number">15</span>)
+    at Compilation._codeGenerationModule (<span class="regexp">/Users/</span>xx<span class="regexp">/Desktop/</span>xx<span class="regexp">/chat/</span>node_modules<span class="regexp">/webpack/</span>lib/Compilation.<span class="string">js:</span><span class="number">2720</span>:<span class="number">9</span>)</code></pre><p>I&#39;m using react-virtualized which contains <a href="https://github.com/brigand/babel-plugin-flow-react-proptypes" rel="nofollow noopener noreferrer" target="_blank" class="link ">babel-plugin-flow-react-proptypes</a></p><p>If anyone encounters this similar problem,  please helppppp!!!</p>
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e8f59b515cab3e4fac3bae burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-60e8f5826da037398480b53b avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/u/61893525?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/61893525?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>alimosa2009</div>
+      <div class='chat-item__username js-chat-item-from'>@alimosa2009</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60e8f59b515cab3e4fac3bae' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      How
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60e9f4b27b5a415e65db4f7a burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-5a592a06d73408ce4f87e9e9 avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/u/4681282?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/4681282?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Dusan Bosnjak</div>
+      <div class='chat-item__username js-chat-item-from'>@pailhead</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60e9f4b27b5a415e65db4f7a' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      Hola, i&#39;m having some issues with webpack and webpack dev server. I just moved my project to a different machine and it takes about 15 seconds to load a page in Chrome and Chrome Canary. On my other machine this happens in around 1 second on Chrome :( I&#39;m using the same versions of webpack, webpack-dev-server and node
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60ec39807b5a415e65dffb3a burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-5797a00a40f3a6eec05c9241 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/u/14542836?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/14542836?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Abhishek Mukherjee</div>
+      <div class='chat-item__username js-chat-item-from'>@mukherjeea</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60ec39807b5a415e65dffb3a' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      hello all! I have a build-child.js which I want to treat as a helper script for the build process. how do I specify this in my configs? I also want to utilise my project dev dependencies in build-child.js but I get &#39;module&#39; is not defined error.
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60eddd6a67b72e1bfe0d109e burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-57f8f16bd73408ce4f2cbd10 avatar-s offline  ">
+  <img src="https", "//pbs.twimg.com/profile_images/603990876768112640/sG4OgUaa_bigger.jpg" srcset="https://pbs.twimg.com/profile_images/603990876768112640/sG4OgUaa_bigger.jpg 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>brt</div>
+      <div class='chat-item__username js-chat-item-from'>@brtjob_twitter</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60eddd6a67b72e1bfe0d109e' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      hi, I&#39;m stuck on <code>exports is not defined</code> when trying to import a package
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60eddd7a23fd26511dad7670 burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      this is my config", "<pre><code><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);");
+con.setRequestProperty("<span class="module"><span class="keyword">module</span>.exports = </span>{
+  entry", "<span class="string">'./src/index.ts'</span>,
+  <span class="module"><span class="keyword">module</span>: </span>{
+    rules: [
+      {
+        test: <span class="regexp">/\.tsx?$/</span>,
+        use: <span class="string">'ts-loader'</span>,
+        exclude: <span class="regexp">/node_modules/</span>,
+      },
+    ],
+  },
+  resolve: {
+    extensions: [<span class="string">'.tsx'</span>, <span class="string">'.ts'</span>, <span class="string">'.js'</span>],
+  },
+  output: {
+    filename: <span class="string">'bundle.js'</span>,
+    path: path.resolve(__dirname, <span class="string">'dist'</span>),
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, <span class="string">'dist'</span>),
+  },");
+con.setRequestProperty("};</code></pre>
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60edddaef1274d5e504842a4 burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      and this is <code>src/index.ts</code>", "<pre><code><span class="keyword">import</span> <span class="string">'nano-web'</span>;</code></pre>
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60edddb9951c58084ed8a2cc burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      in other words", "not very interesting 
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60ede4b0ec10653d5a3b4814 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-57f8f16bd73408ce4f2cbd10 avatar-s offline  ">
+  <img src="https", "//pbs.twimg.com/profile_images/603990876768112640/sG4OgUaa_bigger.jpg" srcset="https://pbs.twimg.com/profile_images/603990876768112640/sG4OgUaa_bigger.jpg 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>brt</div>
+      <div class='chat-item__username js-chat-item-from'>@brtjob_twitter</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60ede4b0ec10653d5a3b4814' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      ftr I have <code>&quot;type&quot;: &quot;module&quot;,</code> in both <code>nano-web</code> and the package using webpack
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60ede54248f9b1084a2aab3f burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      actually scratch that- putting it in the webpack <code>package.json</code> causes <code>webpack serve</code> to fail brutally<pre><code>[webpack-cli] ReferenceError", "require is not defined in ES module scope, you can <span class="operator"><span class="keyword">use</span> <span class="keyword">import</span> instead");
+con.setRequestProperty("This <span class="keyword">file</span> <span class="keyword">is</span> being treated <span class="keyword">as</span> an ES <span class="keyword">module</span> because it has a <span class="string">'.js'</span> <span class="keyword">file</span> extension <span class="keyword">and</span> <span class="string">'~/demo/package.json'</span> contains <span class="string">"type"</span>", "<span class="string">"module"</span>. <span class="keyword">To</span> <span class="keyword">treat</span> it <span class="keyword">as</span> a CommonJS script, <span class="keyword">rename</span> it <span class="keyword">to</span> <span class="keyword">use</span> the <span class="string">'.cjs'</span> <span class="keyword">file</span> extension.</span></code></pre>
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60ede574049a0c3e53701b65 burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      so what&#39;s the deal? I get that import is fancy new stuff, but I thought webpack was supposed to take care of all that and bundle it for web
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60ede5d5f1274d5e504859ee burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      but instead it relies on a global <code>exports</code>.. which is obviously not a thing
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60edf28ff1274d5e504876a5 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-57f8f16bd73408ce4f2cbd10 avatar-s offline  ">
+  <img src="https", "//pbs.twimg.com/profile_images/603990876768112640/sG4OgUaa_bigger.jpg" srcset="https://pbs.twimg.com/profile_images/603990876768112640/sG4OgUaa_bigger.jpg 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>brt</div>
+      <div class='chat-item__username js-chat-item-from'>@brtjob_twitter</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60edf28ff1274d5e504876a5' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      not very talkative are we?
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60efeb6467b72e1bfe11c14a burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-60efeaf96da0373984812026 avatar-s offline  ">
+  <img src="https", "//pbs.twimg.com/profile_images/1321811007958896641/HH-pZHNI_bigger.jpg" srcset="https://pbs.twimg.com/profile_images/1321811007958896641/HH-pZHNI_bigger.jpg 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Derek Oakley</div>
+      <div class='chat-item__username js-chat-item-from'>@derek_oakley__twitter</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60efeb6467b72e1bfe11c14a' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      hi with the latest webpack, css and style loaders multiple background images in css don&#39;t seem to be working anymore, it appears to only uses the last one after the comma
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60eff0c167b72e1bfe11cd39 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-60efeaf96da0373984812026 avatar-s offline  ">
+  <img src="https", "//pbs.twimg.com/profile_images/1321811007958896641/HH-pZHNI_bigger.jpg" srcset="https://pbs.twimg.com/profile_images/1321811007958896641/HH-pZHNI_bigger.jpg 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Derek Oakley</div>
+      <div class='chat-item__username js-chat-item-from'>@derek_oakley__twitter</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60eff0c167b72e1bfe11cd39' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      the issue seems specific to the new css-loader v6
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60eff4ac82dd9050f5f10b69 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-576fbc81c2f0db084a1ffaa6 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/u/18381359?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/18381359?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>ndragon</div>
+      <div class='chat-item__username js-chat-item-from'>@n-dragon</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60eff4ac82dd9050f5f10b69' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      hi all,<br>trying to understand my webpack module creation behavior,<br>in an app it creates my svg module by exporting a default attribute in another it doesn&#39;t create a default attribute
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60eff4b548f9b1084a2f441d burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      <a href="https", "//files.gitter.im/529f74f4ed5ab0b3bf04ef26/aExh/image.png" rel="nofollow noopener noreferrer" target="_blank" class="link "><img src="https://user-content.gitter-static.net/d188ec11669e9ea3ee3274b910acdcd8a5046c03/68747470733a2f2f66696c65732e6769747465722e696d2f3532396637346634656435616230623362663034656632362f614578682f7468756d622f696d6167652e706e67" alt="image.png" rel="nofollow"></a>
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60eff4c20853e41c0d5b6ea3 burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      <a href="https", "//files.gitter.im/529f74f4ed5ab0b3bf04ef26/Y5Gp/image.png" rel="nofollow noopener noreferrer" target="_blank" class="link "><img src="https://user-content.gitter-static.net/55d6a56553277d514e2d181148bc385f609e0031/68747470733a2f2f66696c65732e6769747465722e696d2f3532396637346634656435616230623362663034656632362f593547702f7468756d622f696d6167652e706e67" alt="image.png" rel="nofollow"></a>
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60eff4de17929c14e68ad97e burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      I use the file loader for svg files so I don&#39;t really understand why it behaves like that
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60f00a5e67b72e1bfe120534 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-576fbc81c2f0db084a1ffaa6 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/u/18381359?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/18381359?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>ndragon</div>
+      <div class='chat-item__username js-chat-item-from'>@n-dragon</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60f00a5e67b72e1bfe120534' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      ok found it,<br>file loader switch to es module by default starting from version 5.0 
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60f0bf82f2b4077d6bcc2747 burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-60eb7d756da037398480d2f3 avatar-s offline  ">
+  <img src="https", "//pbs.twimg.com/profile_images/752029786319392768/vEegfbYx_bigger.jpg" srcset="https://pbs.twimg.com/profile_images/752029786319392768/vEegfbYx_bigger.jpg 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Eric G</div>
+      <div class='chat-item__username js-chat-item-from'>@ericgaffer_twitter</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60f0bf82f2b4077d6bcc2747' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      hi, I am trying to write a plugin. is there any examples of using a loader from within a plugin? 
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60f2d01117929c14e69111ce burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-551a387315522ed4b3de138d avatar-s offline  ">
+  <img src="https", "//avatars2.githubusercontent.com/u/200139?v=4&amp;s=30" srcset="https://avatars2.githubusercontent.com/u/200139?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Andrea Spadaccini</div>
+      <div class='chat-item__username js-chat-item-from'>@lupino3</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60f2d01117929c14e69111ce' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      <a href="https://files.gitter.im/529f74f4ed5ab0b3bf04ef26/q7Cy/image.png" rel="nofollow noopener noreferrer" target="_blank" class="link "><img src="https://user-content.gitter-static.net/6878875bef5df99f0bcf5a057760244379738eea/68747470733a2f2f66696c65732e6769747465722e696d2f3532396637346634656435616230623362663034656632362f713743792f7468756d622f696d6167652e706e67" alt="image.png" rel="nofollow"></a>
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60f2d01f951c58084ee3b16b burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      <p>hi folks, I am not a nodejs/webpack expert; I&#39;m trying to get webpack to serve my webapp locally, but it looks like webpack-dev-server hangs on &quot;wait until bundle finished&quot;, and when it finishes the resulting JS served by the server is broken, it looks like it returns index.html inside the JS?</p><p>Here is the error ^ (whoops, the paste already put the screenshot sorry)</p>
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60f2d0317473bf3d782e3499 burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      <a href="https", "//files.gitter.im/529f74f4ed5ab0b3bf04ef26/NdP1/image.png" rel="nofollow noopener noreferrer" target="_blank" class="link "><img src="https://user-content.gitter-static.net/6c9c32bd4e12ada310ca2418e1df8d8483c28d1f/68747470733a2f2f66696c65732e6769747465722e696d2f3532396637346634656435616230623362663034656632362f4e6450312f7468756d622f696d6167652e706e67" alt="image.png" rel="nofollow"></a>
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60f2d04bec10653d5a464a47 burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      <pre><code><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);", "");
+con.setRequestProperty("<span class="keyword">const</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);", "");
+con.setRequestProperty("<span class="keyword">const</span> MonacoWebpackPlugin = <span class="built_in">require</span>(<span class="string">'monaco-editor-webpack-plugin'</span>);", "");
+con.setRequestProperty("<span class="keyword">const</span> CopyPlugin = <span class="built_in">require</span>(<span class="string">'copy-webpack-plugin'</span>);", "");
+con.setRequestProperty("<span class="keyword">const</span> { GitRevisionPlugin } = <span class="built_in">require</span>(<span class="string">'git-revision-webpack-plugin'</span>)", "");
+con.setRequestProperty("<span class="keyword">const</span> outputPath = path.resolve(__dirname, <span class="string">'build/gwt/war/edumips64'</span>);", "");
+con.setRequestProperty("<span class="keyword">const</span> staticPath = path.resolve(__dirname, <span class="string">'src/webapp/static'</span>);", "");
+con.setRequestProperty("<span class="keyword">const</span> copyPlugin = <span class="keyword">new</span> CopyPlugin({
+  patterns", "[{ from: staticPath, to: outputPath }],");
+con.setRequestProperty("});", "");
+con.setRequestProperty("<span class="keyword">const</span> grPlugin = <span class="keyword">new</span> GitRevisionPlugin();", "");
+con.setRequestProperty("<span class="keyword">const</span> versionsPlugin = <span class="keyword">new</span> webpack.DefinePlugin({
+  VERSION", "<span class="built_in">JSON</span>.stringify(grPlugin.version()),
+  COMMITHASH: <span class="built_in">JSON</span>.stringify(grPlugin.commithash()),
+  BRANCH: <span class="built_in">JSON</span>.stringify(grPlugin.branch()),");
+con.setRequestProperty("});", "");
+con.setRequestProperty("<span class="keyword">const</span> monacoPlugin = <span class="keyword">new</span> MonacoWebpackPlugin({
+  languages", "[<span class="string">'mips'</span>],
+  features: [<span class="string">'comment'</span>, <span class="string">'foldng'</span>, <span class="string">'hover'</span>],");
+con.setRequestProperty("});", "");
+con.setRequestProperty("<span class="module"><span class="keyword">module</span>.exports = </span>{
+  mode", "<span class="string">'development'</span>,
+  entry: <span class="string">'./src/webapp/index.js'</span>,
+  output: {
+    path: outputPath,
+    filename: <span class="string">'ui.js'</span>,
+  },
+  <span class="module"><span class="keyword">module</span>: </span>{
+    rules: [
+      { test: <span class="regexp">/\.js$/</span>, exclude: <span class="regexp">/node_modules/</span>, loader: <span class="string">'babel-loader'</span> },
+      { test: <span class="regexp">/\.css$/</span>, use: [<span class="string">'style-loader'</span>, <span class="string">'css-loader'</span>] },
+      { test: <span class="regexp">/\.ttf$/</span>, use: [<span class="string">'file-loader'</span>] },
+      { test: <span class="regexp">/\.png$/</span>, use: [<span class="string">'file-loader'</span>] },
+    ],
+  },
+  devServer: {
+    contentBase: outputPath,
+  },
+  plugins: [monacoPlugin, copyPlugin, grPlugin, versionsPlugin],");
+con.setRequestProperty("};</code></pre>
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60f2d07723fd26511db87e6e burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      <p>Am I missing something obvious?</p><p>If I run a web server from the output directory, it works just fine. (I need that because I&#39;m using web workers so just opening the directory in chrome doesn&#39;t work)</p>
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60f2d09438da567d82a611ad burstContinued read  " role="listitem"><div class='chat-item__container'>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__text js-chat-item-text'>
+      (my webpack config is also here", "<a href="https://github.com/EduMIPS64/edumips64/blob/master/webpack.config.js" rel="nofollow noopener noreferrer" target="_blank" class="link ">https://github.com/EduMIPS64/edumips64/blob/master/webpack.config.js</a>)
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+                <div class="chat-item model-id-60f47a88951c58084ee70a8d burstStart read  " role="listitem"><div class='chat-item__container'>
+  <div class='chat-item__aside'>
+    <div class="chat-item__avatar">
+      <div
+  class="trpDisplayPicture avatar-58d98084d73408ce4f5420a1 avatar-s offline  ">
+  <img src="https", "//avatars0.githubusercontent.com/u/200012?v=4&amp;s=30" srcset="https://avatars0.githubusercontent.com/u/200012?v=4&amp;s=60 2x" height="30" width="30" class="avatar__image" alt="">");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+  </div>
+    <div class="chat-item__actions js-chat-item-actions">
+      <i class="chat-item__icon icon-check chat-item__icon--read js-chat-item-readby"></i>
+      <i class="chat-item__icon icon-ellipsis"></i>
+    </div>
+  <div class='chat-item__content'>
+    <div class='chat-item__details'>
+      <div class='chat-item__from js-chat-item-from'>Tim Martin</div>
+      <div class='chat-item__username js-chat-item-from'>@t-mart</div>
+      <a class='chat-item__time js-chat-time'  href='https", "//gitter.im/webpack/webpack?at=60f47a88951c58084ee70a8d' title=""></a>
+    </div>
+    <div class='chat-item__text js-chat-item-text'>
+      <p>I need to include some custom code in the webpack dev server&#39;s live reload client-side javascript. This seems to be a piece of code that&#39;s bundled in to watch the dev server for changes and reload as needed (<a href="https://github.com/webpack/webpack-dev-server/blob/master/client-src/utils/reloadApp.js#L15" rel="nofollow noopener noreferrer" target="_blank" class="link ">https://github.com/webpack/webpack-dev-server/blob/master/client-src/utils/reloadApp.js#L15</a>).</p><p>I&#39;m writing a &quot;content script&quot; for a Chrome browser extension, which the browser will inject into a webpage (think extensions like Honey, which add pricing data to Amazon pages). For development, I&#39;m injecting my content script into a dev-server-hosted page. The live reload functionality works great (I update my code and the page reloads).</p><p>However, Chrome extensions require additional step to use the newly built code: an extension reload. (Otherwise, the previously loaded content script will be injected indefinitely). This can be achieved in code by simply running <code>chrome.runtime.reload();</code> on the client.</p><p>So in all, I&#39;d like the live reload logic to execute this statement, and then carry on reloading the page as normal. How can I achieve this? (The code I linked above didn&#39;t seem to consider any kind of dev sever options. Maybe I need to fork and do this the hard way?)</p>
+    </div>
+  </div>");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("</div>
+            </div>
+        </div>
+          <div id='initial' style="height", "1px;width:1px;overflow:hidden;opacity:0"><a name="initial"/>_</a></div>
+      </div>
+    </div>
+    <div class="chat-connectivity-indicator-wrapper"></div>
+  </div>");
+con.setRequestProperty("</div>
+      <footer class="chat-input chat-input-nli" id="chat-input-wrapper">
+  <a href="/login?action=login" target="_top" class="chat-input__btn">
+  Sign in to start talking
+  </a>
+    <a href="https", "//matrix.to/#/#webpack_webpack:gitter.im?utm_source=gitter" class="chat-input__btn chat-input__btn--matrix" target="_blank" rel="nofollow noopener noreferrer">
+    <img src='//cdn01.gitter.im/_s/607e329c0/images/svg/matrix-favicon-logo-white.svg' aria-hidden="true">
+    Chat via Matrix
+    </a>");
+con.setRequestProperty("</footer>
+    </div>
+  </div>", "");
+con.setRequestProperty("</div>", "");
+con.setRequestProperty("<div class="trpBlankPage"></div>", "");
+con.setRequestProperty("<script type="text/javascript">
+    var s = document.querySelector('#initial');
+    if(s) setTimeout(function() {
+      s.scrollIntoView();
+    }, 16) ;", "");
+con.setRequestProperty("</script>", "");
+con.setRequestProperty("</div>
+    </div>", "");
+con.setRequestProperty("<div class="js-drag-overlay drag-frame hide">
+      <span class="octicon octicon-arrow-down"></span>
+    </div>", "");
+con.setRequestProperty("<script type="text/javascript">window.gitterClientEnv = {"lang"", ""en","domain":"gitter.im","baseServer":"gitter.im","basePath":"https://gitter.im","apiBasePath":"https://gitter.im/api","homeUrl":"/","badgeBaseUrl":"https://badges.gitter.im","googleTrackingId":"UA-45918290-1","googleTrackingDomain":"gitter.im","env":"prod","cdns":["cdn01.gitter.im","cdn02.gitter.im","cdn03.gitter.im"],"version":"607e32","assetTag":"607e329c0","exportEnabled":true,"logging":false,"ravenUrl":"https://be4e47abe6ae4ed58bd8a5326124638e@sentry.matrix.org/25","websockets":{"fayeUrl":"https://ws.gitter.im/bayeux","options":{"timeout":120,"retry":2}},"avatarsUrl":"https://avatars.gitter.im","avatarCdns":["https://avatars-01.gitter.im","https://avatars-02.gitter.im","https://avatars-03.gitter.im","https://avatars-04.gitter.im","https://avatars-05.gitter.im"],"vapidAppServerKey":"BMhrlZd_I5OFJSJQTbg2mZ5PTHarzenwsKfsRd8C0-HRBygpDj9O3M4VTJIQfB9VPDjAoO_w2eg7Sj_cMXzuLwI","headlineNumbers":{"gitterUsers":"800K+","gitterRooms":"300K+","gitterGroups":"90K+","gitterCountries":"100+"},"inviteEmailAbuseThresholdPerDay":10};window.troupeContext = {"accessToken":"$jVqTxMZdz+R51l0OGzU2za6gba2YVJD4iC0eUFxy9Og=","locale":{"%d unread message":{"one":"%d unread message","other":"%d unread messages"},"Unread messages in %%s, %%s and one other":{"one":"Unread messages in %%s, %%s and one other","other":"Unread messages in %%s, %%s and %d others"},"Unread messages in %s":"Unread messages in %s","Unread messages in %s and %s":"Unread messages in %s and %s","Unread messages from %s":"Unread messages from %s","Unread messages from %s and %s":"Unread messages from %s and %s","Unread messages from %%s, %%s and one other":{"one":"Unread messages from %%s, %%s and one other","other":"Unread messages from %%s, %%s and %d others"},"Gitter is available in all modern browsers as well as apps for desktops.":"Gitter is available in all modern browsers as well as apps for desktops.","Mac":"Mac","Windows":"Windows","Linux 32":"Linux 32","Linux 64":"Linux 64","The above Mac installer is a signed version of 1.177 (backed by Safari). For an unsigned 5.0.1 installer (backed by <a %s>NW.js<\/a>), <a %s>click here to download<\/a>.":"The above Mac installer is a signed version of 1.177 (backed by Safari). For an unsigned 5.0.1 installer (backed by <a %s>NW.js<\/a>), <a %s>click here to download<\/a>.","Mac users on 10.9 or lower, <a %s>download here<\/a>.":"Mac users on 10.9 or lower, <a %s>download here<\/a>.","We also have a sweet little <a %s>IRC bridge<\/a>.":"We also have a sweet little <a %s>IRC bridge<\/a>.","The dedicated Android/iOS apps are no longer recommended and may be officially <a href='%s'>deprecated in the future<\/a>. For mobile, we recommend using the mobile web version in your browser.":"The dedicated Android/iOS apps are no longer recommended and may be officially <a href='%s'>deprecated in the future<\/a>. For mobile, we recommend using the mobile web version in your browser.","Our efforts are focused on the <a %s>webapp<\/a> which is the backbone of the mobile/desktop apps but mainly focused on the web experience. There are a number of bugs in these desktop/mobile clients and they spread the Gitter team too thin for us to give them proper attention. The apps are open-source if you want to tackle something particularly annoying to you.":"Our efforts are focused on the <a %s>webapp<\/a> which is the backbone of the mobile/desktop apps but mainly focused on the web experience. There are a number of bugs in these desktop/mobile clients and they spread the Gitter team too thin for us to give them proper attention. The apps are open-source if you want to tackle something particularly annoying to you.","desktop":"desktop","iOS":"iOS","Android":"Android","Support":"Support","API":"API","Blog":"Blog","Twitter":"Twitter","The dedicated Gitter Android/iOS apps are no longer recommended and are officially <a href='%s' target='_blank'>deprecated<\/a>. For Android/iOS, we bridge all public rooms over to Matrix, so you can use any <a href='%s' target='_blank'>Matrix client<\/a> like <a href='%s' target='_blank'>Element (Android)<\/a> or <a href='%s' target='_blank'>Element (iOS)<\/a> to access those rooms.":"The dedicated Gitter Android/iOS apps are no longer recommended and are officially <a href='%s' target='_blank'>deprecated<\/a>. For Android/iOS, we bridge all public rooms over to Matrix, so you can use any <a href='%s' target='_blank'>Matrix client<\/a> like <a href='%s' target='_blank'>Element (Android)<\/a> or <a href='%s' target='_blank'>Element (iOS)<\/a> to access those rooms.","The above Mac installer is a signed version of 1.177 (backed by Safari). For an unsigned 5.0.1 installer (backed by <a %s>NW.js<\/a>), <a %s>click here to download<\/a>. Mac users on 10.9 or lower, <a %s>download here<\/a>.":"The above Mac installer is a signed version of 1.177 (backed by Safari). For an unsigned 5.0.1 installer (backed by <a %s>NW.js<\/a>), <a %s>click here to download<\/a>. Mac users on 10.9 or lower, <a %s>download here<\/a>.","Gitter &mdash; Where developers come to talk.":"Gitter &mdash; Where developers come to talk.","Documentation":"Documentation"},"features":[],"roomMember":false,"user":null,"troupe":{"id":"529f74f4ed5ab0b3bf04ef26","name":"webpack/webpack","topic":"For questions please post on Stack Overflow and use the 'webpack' tag (http://stackoverflow.com/tags/webpack).","avatarUrl":"https://avatars-03.gitter.im/group/iv/4/57542beec43b8c601976e3c5","uri":"webpack/webpack","userCount":19968,"url":"/webpack/webpack","githubType":"REPO","associatedRepo":"webpack/webpack","security":"PUBLIC","groupId":"57542beec43b8c601976e3c5","group":{"id":"57542beec43b8c601976e3c5","name":"webpack","uri":"webpack","homeUri":"webpack/home","backedBy":{"type":"GH_ORG","linkPath":"webpack"},"avatarUrl":"https://avatars-03.gitter.im/group/iv/4/57542beec43b8c601976e3c5"},"backend":{"type":"GH_REPO","linkPath":"webpack/webpack"},"public":true,"matrixRoomLink":"https://matrix.to/#/#webpack_webpack:gitter.im?utm_source=gitter","v":10930},"roomHasWelcomeMessage":true,"snapshots":{"rightToolbar":{},"allRooms":[],"groups":[]}};</script>
+    
+    <script type="text/javascript">window.webpackPublicPath = '//cdn02.gitter.im/_s/607e329c0/js/';</script>
+    <script type="text/javascript" src="//cdn01.gitter.im/_s/607e329c0/js/runtime.bundle.js"></script>");
+con.setRequestProperty("<script type="text/javascript" src="//cdn03.gitter.im/_s/607e329c0/js/vendor.chunk.js"></script>", "");
+con.setRequestProperty("<script type="text/javascript" src="//cdn02.gitter.im/_s/607e329c0/js/default.chunk.js"></script>", "");
+con.setRequestProperty("<script type="text/javascript" src="//cdn02.gitter.im/_s/607e329c0/js/router-nli-chat.chunk.js"></script>", "");
+con.setRequestProperty("<script type="text/javascript" src="//cdn01.gitter.im/_s/607e329c0/js/router-app.chunk.js"></script>
+  
+  </body>", "");
+con.setRequestProperty("</html>", "");
+
+int status = con.getResponseCode();
+BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+String inputLine;
+StringBuffer content = new StringBuffer();
+while((inputLine = in.readLine()) != null) {
+	content.append(inputLine);
+}
+in.close();
+con.disconnect();
+System.out.println("Response status: " + status);
+System.out.println(content.toString());
